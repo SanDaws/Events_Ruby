@@ -4,6 +4,9 @@ class EventsController < ApplicationController
   # GET /events or /events.json
   def index
     @events = Event.all
+    # showme all the events thar are avaliable rn
+    @ticket_avaliable = Event.still_avaliable_tickets
+    @specific_look= Event.still_avaliable_tickets.nextndays(3)
   end
 
   # GET /events/1 or /events/1.json

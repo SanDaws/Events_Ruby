@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_11_06_163233) do
   create_table "events", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.boolean "avalible_tickets"
+    t.boolean "avalible_tickets", default: true
     t.datetime "date"
     t.integer "capacity"
     t.datetime "created_at", null: false

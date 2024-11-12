@@ -18,6 +18,18 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <h1>Eventualizer</h1>
+      <nav>
+        <%= link_to 'Home', root_path %>
+      </nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
   </body>
+
+  <footer>
+    <h3>thats all</h3>
+  </footer>
 </html>

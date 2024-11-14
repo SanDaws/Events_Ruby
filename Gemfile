@@ -46,9 +46,11 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-  
-  gem 'simplecov', require: false, group: :test
-
+  # rspec-rails integrates the Rails testing helpers into RSpec.
+  gem "rspec-rails", "~> 7.1"
+  gem "rails-controller-testing", "~> 1.0", ">= 1.0.5"
+  # Code coverage for Ruby with a UI
+  gem "simplecov", "~> 0.22.0"
 end
 
 group :development do

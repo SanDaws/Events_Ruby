@@ -1,5 +1,5 @@
 class Event < ApplicationRecord
-  belongs_to :users
+  belongs_to :user
 
   include ActiveModel::Attributes
   attribute :tickets_still_avaliable, :integer, default: :capacity # this will work as consuming of another service

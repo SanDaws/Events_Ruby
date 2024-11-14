@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 if ! gem list foreman -i --silent; then
   echo "Installing foreman..."

@@ -7,7 +7,7 @@ RSpec.describe Event, type: :model do
 
   describe "i dont know" do
     it "is valid with valid attributes" do
-      event_entry = Event.new(name: "lets sse everithig",description: "something",date: date.today,capacity:after =>  column_name, user: nil)
+      event_entry = Event.new(name: "lets sse everithig", description: "something", date: date.today, capacity: 200, user: nil)
       expect(event_entry).to_not be_valid
     end
     it "is valid with valid attributes" do
